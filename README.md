@@ -6,6 +6,6 @@ A single-page web app that allows users to challenge their memory.
 - The ` Restart ` button is used to reset your game and start it all over.
 
 ## Scoring
-- ! [alt text](https://github.com/sumanhakki/memoryGame/tree/master/img/3star.svg) 30 moves or less.
-- ! [alt text](imgs/2stars.svg) between 31 and 64 moves.
-- ! [alt text](imgs/1stars.svg) more than 64 moves.
+- *** three stars, 30 moves or less.
+- ** two stars, between 31 and 64 moves.
+- * one star, more than 64 moves. 
