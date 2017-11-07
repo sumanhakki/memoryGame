@@ -6,6 +6,6 @@ A single-page web app that allows users to challenge their memory.
 - The ` Restart ` button is used to reset your game and start it all over.
 
 ## Scoring
-- *** three stars, 30 moves or less.
-- ** two stars, between 31 and 64 moves.
-- * one star, more than 64 moves. 
+- Three stars, 30 moves or less.
+- Two stars, between 31 and 64 moves.
+- One star, more than 64 moves. 
