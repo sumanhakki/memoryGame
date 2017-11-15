@@ -4,6 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="description" content="">
+    <meta name="description" content="Memory Game Project for Udacity">
+    <meta name="author" content="Hakki Suman ">
     <title>Memory Game</title>
     <link rel="stylesheet" type="text/css" href="css/memoryGame.css">
 
@@ -17,7 +19,7 @@
         <header>
             <h1>Memory Game</h1>
         </header>
-
+        <!-- Display Score Panel -->
         <section class="score-panel">
             <span id="myImg"> </span>
 
@@ -25,19 +27,23 @@
 
 
             <button class="restart" onclick="reset()" id="reset">Restart</button>
+            <h3>Time:&nbsp;<span id="clock">0:00</span></h3>
 
         </section>
         <div id="game_board">
 
         </div>
+
+        <!-- End of game messages -->
+
         <div>
             <h1 id="theEnd"></h1>
         </div>
         <div>
-            <h3 id="doit"></h3>
+            <h3 id="start over"></h3>
         </div>
     </div>
-    <script src="memoryGame.js"></script>
+    <script src="js/memoryGame.js"></script>
 
 </body>
 

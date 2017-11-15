@@ -8,10 +8,38 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
-   width="13.225565"
-   height="12.082869"
-   id="svg2">
+   width="25"
+   height="25"
+   id="svg2"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="star.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     id="namedview13"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="19.531786"
+     inkscape:cx="6.6127828"
+     inkscape:cy="12.185174"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
   <defs
      id="defs4">
     <linearGradient
@@ -49,17 +77,18 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
-     transform="translate(-7.2273145,-1005.4016)"
+     transform="matrix(1.8902783,0,0,2.0690451,-13.661636,-2080.2212)"
      id="layer1">
     <path
        d="m 55.053315,10.484771 -4.972629,-3.7127059 -4.761992,3.9792779 1.994367,-5.8765396 -5.256055,-3.2992587 6.205215,0.080805 1.513571,-6.0183324 1.840667,5.9264801 6.191494,-0.4202753 -5.06762,3.5819615 z"
        transform="matrix(0.83966796,0,0,0.79948441,-28.086606,1008.8889)"
        id="path5223"
-       style="fill:#ccd52b;fill-opacity:1" />
+       style="fill:#ccd52b;fill-opacity:1"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>

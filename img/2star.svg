@@ -11,12 +11,12 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="26.031679"
-   height="11.975121"
+   width="50"
+   height="25"
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="3star.svg">
+   sodipodi:docname="2star.svg">
   <defs
      id="defs4">
     <linearGradient
@@ -57,8 +57,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="15.839192"
-     inkscape:cx="36.825444"
-     inkscape:cy="3.4017846"
+     inkscape:cx="36.825443"
+     inkscape:cy="15.308404"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -80,7 +80,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -88,7 +88,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-7.2273141,-1005.2195)">
+     transform="translate(-7.2273148,-991.47433)">
     <path
        sodipodi:type="star"
        style="fill:#ccd52b;fill-opacity:1"
@@ -104,9 +104,9 @@
        inkscape:rounded="0"
        inkscape:randomized="0"
        d="m 55.053315,10.484771 -4.972629,-3.7127059 -4.761992,3.9792779 1.994367,-5.8765396 -5.256055,-3.2992587 6.205215,0.080805 1.513571,-6.0183324 1.840667,5.9264801 6.191494,-0.4202753 -5.06762,3.5819615 z"
-       transform="matrix(0.77553514,0,0,0.73264588,-25.389372,1008.5974)"
-       inkscape:transform-center-x="0.0543448"
-       inkscape:transform-center-y="-0.53041808" />
+       transform="matrix(1.5631564,0,0,1.6541692,-58.514363,998.68979)"
+       inkscape:transform-center-x="0.10953533"
+       inkscape:transform-center-y="-1.1975748" />
     <path
        sodipodi:type="star"
        style="fill:#ccd52b;fill-opacity:1"
@@ -122,8 +122,8 @@
        inkscape:rounded="0"
        inkscape:randomized="0"
        d="M 26.769042,7.0321058 21.20254,8.2022367 21.053699,13.888448 18.220695,8.9559801 12.766792,10.57156 16.582401,6.3529964 13.360545,1.6652685 l 5.19118,2.325252 3.462686,-4.51275505 -0.607283,5.65564835 z"
-       transform="matrix(0.81018361,-0.32508535,0.32577963,0.80845702,9.2802375,1012.7983)"
-       inkscape:transform-center-x="0.0032640731"
-       inkscape:transform-center-y="-0.62874068" />
+       transform="matrix(1.5897863,-0.67866816,0.63926247,1.6877846,10.400984,1007.2589)"
+       inkscape:transform-center-x="0.0064039249"
+       inkscape:transform-center-y="-1.3125518" />
   </g>
 </svg>

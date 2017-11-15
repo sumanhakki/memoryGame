@@ -32,7 +32,9 @@ h1 {
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
 }
-
+/*
+/*Game Board 
+*/
 div#game_board {
     width: 660px;
     min-height: 680px;
@@ -48,6 +50,9 @@ div#game_board {
     margin: 0 0 3em;
 }
 
+/*
+/*Cards
+*/
 div#game_board> div {
     height: 125px;
     width: 125px;
