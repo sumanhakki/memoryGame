@@ -3,10 +3,10 @@ var memory_values = [];
 var memory_tile_ids = [];
 var tiles_flipped = 0;
 var counter = 0;
-//var timer= 0;
+var numOfStars = 3;
 var timer_is_on = 0;
 var myVar = 0;
-
+var x = document.createElement("IMG");
 //Shuffle cards
 Array.prototype.memory_tile_shuffle = function() {
     var i = this.length,
@@ -23,15 +23,19 @@ function newBoard() {
     tiles_flipped = 0;
     moves = 0;
     var output = '';
+
+
     document.getElementById("moves").innerHTML = 0;
-    document.getElementById("myImg").innerHTML = " ";
+    document.getElementById("myImg").innerHTML = " "
     document.getElementById("theEnd").innerHTML = " ";
-    document.getElementById("start over").innerHTML = " ";
+    document.getElementById("startOver").innerHTML = " ";
     memory_array.memory_tile_shuffle();
     for (var i = 0; i < memory_array.length; i++) {
         output += '<div id="tile_' + i + '" onclick="memoryFlipTile(this,\'' + memory_array[i] + '\')"></div>';
     }
     document.getElementById('game_board').innerHTML = output;
+    displayStars(numOfStars);
+
 }
 
 
@@ -60,17 +64,37 @@ function reset() {
     newBoard();
 
 }
+//Check on how many moves are made and convert it to a score
+function checkStars() {
+    var currentStars;
+    if (counter > 25) {
+        currentStars = 1;
+    } else if (counter >= 19 && counter < 25) {
+        currentStars = 2;
+    } else {
+        currentStars = 3;
+    }
+
+    if (currentStars !== numOfStars) {
+        displayStars(currentStars);
+    }
+
+}
+
 
 //Display score
-function displayStars(num) {
+function displayStars(stars) {
+    var num = stars;
     var x = document.createElement("IMG");
-    if (num > 65) {
-        x.setAttribute("src", "img/star.svg");
-    } else if (num >= 19 && num < 65) {
-        x.setAttribute("src", "img/2star.svg");
+    document.getElementById("myImg").innerHTML = " ";
+    if (num > 0 && num < 2) {
+        x.setAttribute("src", "img/starLarge.svg");
+    } else if (num > 1 && num < 3) {
+        x.setAttribute("src", "img/2starLarge.svg");
 
     } else {
-        x.setAttribute("src", "img/3star.svg")
+        x.setAttribute("src", "img/3starLarge.svg");
+
     }
 
     document.getElementById("myImg").appendChild(x);
@@ -82,8 +106,9 @@ function gameOver() {
     var x = document.createTextNode(" GAME OVER");
     var t = document.createTextNode(" Click Restart to start over ");
     document.getElementById("theEnd").appendChild(x);
-    document.getElementById("start over").appendChild(t);
+    document.getElementById("startOver").appendChild(t);
     stopCount();
+    checkStars();
 }
 
 
@@ -153,23 +178,24 @@ function memoryFlipTile(tile, val) {
         } else if (memory_values.length == 1) {
             memory_values.push(val);
             memory_tile_ids.push(tile.id);
-            //If a match don't flipp back and show value
+            //If a match don't flipp back and show value, count moves and display current score
             if (memory_values[0] == memory_values[1]) {
                 tiles_flipped += 2;
                 memory_values = [];
                 memory_tile_ids = [];
                 countMoves();
-                //All tiles flipped
+                checkStars();
+                //All tiles flipped, end game and display score
                 if (tiles_flipped == memory_array.length) {
 
 
-                    displayStars(counter);
+                    checkStars();
                     gameOver();
 
 
 
                 }
-                //No match flip tiles over
+                //No match flip tiles over, calculate moves and show current score
             } else {
                 function flip2Back() {
                     var tile_1 = document.getElementById(memory_tile_ids[0]);
@@ -182,6 +208,7 @@ function memoryFlipTile(tile, val) {
                     memory_values = [];
                     memory_tile_ids = [];
                     countMoves();
+                    checkStars();
 
                 }
 

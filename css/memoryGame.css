@@ -31,13 +31,20 @@ body {
 h1 {
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
+    font-size: 80px;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 60px;
 }
 /*
 /*Game Board 
 */
 div#game_board {
-    width: 660px;
-    min-height: 680px;
+    width: 960px;
+    min-height: 980px;
     background: linear-gradient(160deg, #02ccba 0%, #aa7ecd 100%);
     padding: 32px;
     font-size: 32px;
@@ -54,10 +61,10 @@ div#game_board {
 /*Cards
 */
 div#game_board> div {
-    height: 125px;
-    width: 125px;
+    height: 200px;
+    width: 200px;
     background: #2e3d49;
-    font-size: 64px;
+    font-size: 125px;
     color: #000000;
     border-radius: 8px;
     cursor: pointer;
@@ -74,13 +81,39 @@ div#game_board> div {
 
 .score-panel {
     text-align: left;
-    width: 345px;
-    font-size: 30px;
+    width: 960px;
+    font-size: 60px;
     margin-bottom: 10px;
 }
 
-.score-panel .restart { 
-    font-size: 30px;   
+.restart { 
+    font-size: 60px;   
     float: right;
     cursor: pointer;
 }
+
+.time {
+    float: right;
+}
+
+@media screen and ( max-width: 900px ) {
+
+    div#game_board {
+    width: 660px;
+    min-height: 680px;
+    }
+
+    div#game_board> div {
+    height: 125px;
+    width: 125px;
+    }
+    .score-panel {    
+    width: 360px;
+    font-size: 40px;    
+    }
+
+    .restart { 
+    font-size: 40px;    
+    }
+}
+
