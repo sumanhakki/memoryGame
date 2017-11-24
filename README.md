@@ -15,6 +15,8 @@ The game board consists of sixteen cards arranged randomly in a grid, each with 
   - If the cards match, both cards stay flipped over
   - If the cards do not match, both cards are returned to their initial hidden state
   - If the cards do not match, both cards are returned to their initial hidden state
+
+  
 ### Screenshots
 ![gameBoard.pdf](https://github.com/sumanhakki/memoryGame/files/1500446/gameBoard.pdf)
 ![gameInPlay.pdf](https://github.com/sumanhakki/memoryGame/files/1500447/gameInPlay.pdf)
@@ -28,16 +30,3 @@ The game board consists of sixteen cards arranged randomly in a grid, each with 
   - Player starts game over by clicking on Restart button
 
 
-<<<<<<< HEAD
-||||||| merged common ancestors
-## Scoring
-- Three stars, 30 moves or less.
-- Two stars, between 31 and 64 moves.
-- One star, more than 64 moves. 
-=======
-## Scoring
-- Three stars, 30 moves or less.
-- Two stars, between 31 and 64 moves.
-- One star, more than 64 moves. 
-[gameBoard.pdf](https://github.com/sumanhakki/memoryGame/files/1500415/gameBoard.pdf)
->>>>>>> af61487bf13544d9a55dd67dc32b5bf7fbf0eb3f
