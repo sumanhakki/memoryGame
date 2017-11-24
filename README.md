@@ -9,3 +9,4 @@ A single-page web app that allows users to challenge their memory.
 - Three stars, 30 moves or less.
 - Two stars, between 31 and 64 moves.
 - One star, more than 64 moves. 
+[gameBoard.pdf](https://github.com/sumanhakki/memoryGame/files/1500415/gameBoard.pdf)
