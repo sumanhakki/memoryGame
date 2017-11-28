@@ -43,6 +43,7 @@ function newBoard() {
 //Count moves
 function countMoves() {
     document.getElementById("moves").innerHTML = add();
+    document.getElementById("modalMoves").innerHTML = add() - 1;
 
 }
 
@@ -60,7 +61,9 @@ var add = (function() {
 function reset() {
     counter = 0;
     document.getElementById("moves").innerHTML = 0;
+    document.getElementById("modalMoves").innerHTML = 0;
     resetTime();
+    closeModal();
     newBoard();
 
 }
@@ -86,29 +89,47 @@ function checkStars() {
 function displayStars(stars) {
     var num = stars;
     var x = document.createElement("IMG");
+    var y = document.createElement("IMG");
     document.getElementById("myImg").innerHTML = " ";
+    document.getElementById("modalImg").innerHTML = " ";
     if (num > 0 && num < 2) {
         x.setAttribute("src", "img/starLarge.svg");
+        y.setAttribute("src", "img/starLarge.svg");
     } else if (num > 1 && num < 3) {
         x.setAttribute("src", "img/2starLarge.svg");
+        y.setAttribute("src", "img/2starLarge.svg");
 
     } else {
         x.setAttribute("src", "img/3starLarge.svg");
+        y.setAttribute("src", "img/3starLarge.svg");
 
     }
 
     document.getElementById("myImg").appendChild(x);
+    document.getElementById("modalImg").appendChild(y);
 
+}
+
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Open the modal 
+function showModal() {
+    modal.style.display = "block";
+    modal.style.display = "flex";
+
+}
+
+// Close the modal
+function closeModal() {
+    modal.style.display = "none";
 }
 
 //End game, display game over message and score
 function gameOver() {
-    var x = document.createTextNode(" GAME OVER");
-    var t = document.createTextNode(" Click Restart to start over ");
-    document.getElementById("theEnd").appendChild(x);
-    document.getElementById("startOver").appendChild(t);
     stopCount();
     checkStars();
+    showModal();
 }
 
 
@@ -132,6 +153,7 @@ function timedCount() {
         }
         var currentTime = minutes + ':' + seconds;
         document.getElementById("clock").innerHTML = currentTime;
+        document.getElementById("modalClock").innerHTML = currentTime;
     }, 1000);
 }
 
@@ -154,6 +176,7 @@ function stopCount() {
 function resetTime() {
     var currentTime = "0:00";
     document.getElementById("clock").innerHTML = currentTime;
+    document.getElementById("modalClock").innerHTML = currentTime;
     clearInterval(myVar);
     myVar = 0;
     timer_is_on = 0;
