@@ -1,42 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="utf-8">
-      <meta name="description" content="Memory Game Project for Udacity">
-      <meta name="author" content="Hakki Suman ">
-      <title>Memory Game</title>
-      <link rel="stylesheet" type="text/css" href="css/memoryGame.css">
-   </head>
-   <body>
-      <div class="container">
-         <header>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Memory Game Project for Udacity">
+    <meta name="author" content="Hakki Suman ">
+    <title>Memory Game</title>
+    <link rel="stylesheet" type="text/css" href="css/memoryGame.css">
+
+
+
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
             <h1>Memory Game</h1>
-         </header>
-         <!-- Display Score Panel -->
-         <div class="score-panel">
+        </header>
+        <!-- Display Score Panel -->
+        <div class="score-panel">
             <span id="myImg"> </span>
+
             <span id="moves">0</span>Moves
+
+
             <span class="time">Time:&nbsp;<span id="clock">0:00</span></span>
-         </div>
-         <div id="game_board">
-         </div>
-         <div>
+
+        </div>
+        <div id="game_board">
+
+        </div>
+        <div>
             <button class="restart" onclick="reset()" id="reset">Restart</button>
-         </div>
-         <!-- End of game messages -->
-         <!-- The Modal -->
-         <div id="myModal" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content">
-               <p class="modalContent"> Good Job!! You Got Them All!!</p>
-               <p class="modalContent" > Click Restart button to play again</p>
-               <span class="modalStar" id="modalImg"> </span>
-               <span class="modalScore" id="modalMoves">0</span><span class="modalScore">Moves</span>
-               <span class="modalTime">Time:&nbsp;<span id="modalClock">0:00</span></span>
-               <span><button class="restart" onclick="reset()" id="ModalReset">Restart</button></span>
-            </div>
-         </div>            
-      </div>
-      <script src="js/memoryGame.js"></script>
-   </body>
+        </div>
+
+        <!-- End of game messages -->        
+        <div id="myModal" class="modal">
+             <!-- Modal content -->
+             <div class="modal-content">
+                <p class="modalContent"> Good Job!! You Got Them All!!</p>
+                <p class="modalContent" > Click Restart button to play again</p>
+                <span class="modalStar" id="modalImg"> </span>
+                <span class="modalScore" id="modalMoves">0</span><span class="modalScore">Moves</span>
+                <span class="modalTime">Time:&nbsp;<span id="modalClock">0:00</span></span>
+                <span><button class="restart" onclick="reset()" id="ModalReset">Restart</button></span>
+             </div>
+        </div> 
+
+    </div>
+
+    <script src="js/memoryGame.js">
+    </script>
+
+</body>
+
 </html>

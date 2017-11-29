@@ -1,5 +1,5 @@
 html {
-    box-sizing: border-box;
+     box-sizing: border-box;
 }
 
 *,
@@ -17,8 +17,7 @@ body {
 }
 
 body {
-    background: #ffffff url('../img/geometry2.png');
-    /* Background pattern from Subtle Patterns */
+    background: #ffffff url('../img/geometry2.png'); /* Background pattern from Subtle Patterns */
     font-family: 'Coda', cursive;
 }
 
@@ -41,11 +40,7 @@ h2 {
     font-size: 60px;
 }
 
-
-/*
-/*Game Board 
-*/
-
+/*Game Board */
 div#game_board {
     width: 960px;
     min-height: 980px;
@@ -61,12 +56,8 @@ div#game_board {
     margin: 0 0 3em;
 }
 
-
-/*
-/*Cards
-*/
-
-div#game_board>div {
+/*Cards*/
+div#game_board> div {
     height: 200px;
     width: 200px;
     background: #2e3d49;
@@ -81,11 +72,7 @@ div#game_board>div {
     box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
 }
 
-
-/*
- * Styles for the Score Panel
- */
-
+ /* Styles for the Score Panel*/
 .score-panel {
     text-align: left;
     width: 960px;
@@ -93,8 +80,8 @@ div#game_board>div {
     margin-bottom: 10px;
 }
 
-.restart {
-    font-size: 60px;
+.restart { 
+    font-size: 60px;   
     float: right;
     cursor: pointer;
 }
@@ -103,9 +90,7 @@ div#game_board>div {
     float: right;
 }
 
-
-/* The Modal (background) */
-
+/* The Modal (background) */ 
 .modal {
     /* Hidden by default */
     display: none;
@@ -113,7 +98,7 @@ div#game_board>div {
     float: center;
     padding-top: 200px;
     left: 25%;
-    top: 20%;
+    top: 10%;
     bottom: 10%;
     width: 50%;
     height: 70%;
@@ -128,11 +113,9 @@ div#game_board>div {
     justify-content: space-between;
     align-items: center;
     margin: 0 0 3em;
-}
-
-
-/* Modal Content */
-
+} 
+ 
+/* Modal Content */ 
 .modal-content {
     background-color: #fefefe;
     margin: auto;
@@ -144,100 +127,119 @@ div#game_board>div {
     align-items: center;
     text-align: center;
 }
-
+ 
 .modalContent {
     font-size: 60px;
 }
-
+ 
 .modalStar {
     float: left;
     padding: 10px;
     margin: 10px;
 }
-
+ 
 .modalTime {
     float: center;
     font-size: 50px;
 }
-
+ 
 .modalScore {
     font-size: 50px;
     float: left;
 }
 
-@media (max-width: 1000px) {
-    div#game_board {
-        width: 660px;
-        min-height: 680px;
-    }
-    div#game_board>div {
-        height: 125px;
-        width: 125px;
-    }
-    .score-panel {
-        width: 360px;
-        font-size: 40px;
-    }
-    .restart {
-        font-size: 40px;
-    }
-    .modal {
-        padding-top: 0px;
-        left: 0%;
-        top: 0%;
-        bottom: 10%;
-        width: 100%;
-        /* Full width */
-        height: 50%;
-    }
-    .modalTime {
-        float: center;
-        font-size: 30px;
-    }
-    .modalScore {
-        font-size: 30px;
-        float: left;
-    }
-    .modalStar {
-        float: left;
-        padding: 5px;
-        margin: 5px;
-    }
-    .modalContent {
-        font-size: 30px;
-    }
-    .restart {
-        font-size: 30px;
-    }
+@media screen and ( max-width: 900px ) {
+
+div#game_board {
+    width: 660px;
+    min-height: 680px;
 }
 
-@media ( max-width: 1350px) {
-    .modal {
-        padding-top: 0px;
-        left: 0%;
-        top: 0%;
-        bottom: 10%;
-        width: 100%;
-        /* Full width */
-        height: 50%;
-    }
-    .modalTime {
-        float: center;
-        font-size: 30px;
-    }
-    .modalScore {
-        font-size: 30px;
-        float: left;
-    }
-    .modalStar {
-        float: left;
-        padding: 5px;
-        margin: 5px;
-    }
-    .modalContent {
-        font-size: 30px;
-    }
-    .restart {
-        font-size: 30px;
-    }
+div#game_board> div {
+    height: 125px;
+    width: 125px;
 }
+
+.score-panel {    
+    width: 360px;
+    font-size: 40px;    
+}
+
+.restart { 
+    font-size: 40px;    
+}
+
+.modal {
+    padding-top: 0px;
+    left: 0%;
+    top: 0%;
+    bottom: 10%;
+    width: 100%;
+    /* Full width */
+    height: 50%;
+}
+
+.modalTime {
+    float: center;
+    font-size: 30px;
+}
+
+.modalScore {
+    font-size: 30px;
+    float: left;
+}
+
+.modalStar {
+    float: left;
+    padding: 5px;
+    margin: 5px;
+}
+
+.modalContent {
+    font-size: 30px;
+}
+
+.restart {
+    font-size: 30px;
+}
+
+}
+  
+@media ( max-width: 1500px) {
+
+.modal {
+    padding-top: 0px;
+    left: 0%;
+    top: 0%;
+    bottom: 10%;
+    width: 100%;
+    /* Full width */
+    height: 50%;
+}
+
+.modalTime {
+    float: center;
+    font-size: 30px;
+}
+
+.modalScore {
+    font-size: 30px;
+    float: left;
+}
+
+.modalStar {
+    float: left;
+    padding: 5px;
+    margin: 5px;
+}
+
+.modalContent {
+    font-size: 30px;
+}
+
+.restart {
+    font-size: 30px;
+}
+
+}
+

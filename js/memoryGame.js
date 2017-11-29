@@ -23,12 +23,8 @@ function newBoard() {
     tiles_flipped = 0;
     moves = 0;
     var output = '';
-
-
     document.getElementById("moves").innerHTML = 0;
-    document.getElementById("myImg").innerHTML = " "
-    document.getElementById("theEnd").innerHTML = " ";
-    document.getElementById("startOver").innerHTML = " ";
+    document.getElementById("myImg").innerHTML = " "    
     memory_array.memory_tile_shuffle();
     for (var i = 0; i < memory_array.length; i++) {
         output += '<div id="tile_' + i + '" onclick="memoryFlipTile(this,\'' + memory_array[i] + '\')"></div>';
@@ -42,8 +38,7 @@ function newBoard() {
 
 //Count moves
 function countMoves() {
-    document.getElementById("moves").innerHTML = add();
-    document.getElementById("modalMoves").innerHTML = add() - 1;
+    document.getElementById("moves").innerHTML = add();    
 
 }
 
@@ -62,8 +57,8 @@ function reset() {
     counter = 0;
     document.getElementById("moves").innerHTML = 0;
     document.getElementById("modalMoves").innerHTML = 0;
-    resetTime();
     closeModal();
+    resetTime();
     newBoard();
 
 }
@@ -87,46 +82,37 @@ function checkStars() {
 
 //Display score
 function displayStars(stars) {
-    var num = stars;
-    var x = document.createElement("IMG");
-    var y = document.createElement("IMG");
+    var num = stars;    
     document.getElementById("myImg").innerHTML = " ";
-    document.getElementById("modalImg").innerHTML = " ";
     if (num > 0 && num < 2) {
-        x.setAttribute("src", "img/starLarge.svg");
-        y.setAttribute("src", "img/starLarge.svg");
+        x.setAttribute("src", "img/starLarge.svg");        
     } else if (num > 1 && num < 3) {
-        x.setAttribute("src", "img/2starLarge.svg");
-        y.setAttribute("src", "img/2starLarge.svg");
-
+        x.setAttribute("src", "img/2starLarge.svg");        
     } else {
-        x.setAttribute("src", "img/3starLarge.svg");
-        y.setAttribute("src", "img/3starLarge.svg");
-
+        x.setAttribute("src", "img/3starLarge.svg");        
     }
 
-    document.getElementById("myImg").appendChild(x);
-    document.getElementById("modalImg").appendChild(y);
-
+    document.getElementById("myImg").appendChild(x);    
 }
 
 // Get the modal
 var modal = document.getElementById('myModal');
-
-// Open the modal 
+ 
+ // Open the modal 
 function showModal() {
     modal.style.display = "block";
     modal.style.display = "flex";
-
-}
-
-// Close the modal
-function closeModal() {
-    modal.style.display = "none";
-}
+    document.getElementById("modalMoves").innerHTML = add()-1;
+    document.getElementById("modalImg").appendChild(x);
+ }
+ 
+ // Close the modal
+ function closeModal() {
+     modal.style.display = "none";
+ }
 
 //End game, display game over message and score
-function gameOver() {
+function gameOver() {    
     stopCount();
     checkStars();
     showModal();
@@ -138,22 +124,23 @@ function timedCount() {
     var startTime = new Date().getTime();
     myVar = setInterval(function() {
 
-        var now = new Date().getTime();
+    var now = new Date().getTime();
 
-        // Find the time elapsed between now and start
-        var elapsed = now - startTime;
+    // Find the time elapsed between now and start
+    var elapsed = now - startTime;
 
-        // Calculate minutes and seconds
-        let minutes = Math.floor((elapsed % (1000 * 60 * 60)) / (1000 * 60));
-        let seconds = Math.floor((elapsed % (1000 * 60)) / 1000);
+    // Calculate minutes and seconds
+    let minutes = Math.floor((elapsed % (1000 * 60 * 60)) / (1000 * 60));
+    let seconds = Math.floor((elapsed % (1000 * 60)) / 1000);
 
-        // Add starting 0 if seconds < 10
-        if (seconds < 10) {
+    // Add starting 0 if seconds < 10
+    if (seconds < 10) {
             seconds = "0" + seconds;
-        }
-        var currentTime = minutes + ':' + seconds;
-        document.getElementById("clock").innerHTML = currentTime;
-        document.getElementById("modalClock").innerHTML = currentTime;
+    }
+
+    var currentTime = minutes + ':' + seconds;
+    document.getElementById("clock").innerHTML = currentTime;
+    document.getElementById("modalClock").innerHTML = currentTime;
     }, 1000);
 }
 
