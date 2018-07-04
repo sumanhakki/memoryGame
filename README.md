@@ -24,3 +24,5 @@ The game board consists of sixteen cards arranged randomly in a grid, each with 
   - When the game ends, a message appears indicating that the game is over, final star rating, and how long it took to finish the game
   - Player starts game over by clicking on Restart button
 
+### License
+ No license needed
